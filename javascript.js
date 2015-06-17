@@ -75,7 +75,8 @@ $(document).ready(function(){
 		"LO":["w1","f2"],
 		"Phy":["w3","w4"]
 	}
-	var colour="red";
+	var colour="#009933";
+	var colourArray=["#009933","#ff6600","#cc00cc","#0066ff","#9933ff"]
 	var light_grey = "#b2b2b2"
 	var dark_grey = "#4c4c4c"
 	
@@ -229,6 +230,7 @@ $(document).ready(function(){
 		var value = $(this).attr("value");
 		
 		if($(this).is(":checked")){
+			// alert();
 			for(var i=0;i<map[value].length;i++){
 				if($.inArray(map[value][i],slotSelected) > -1){
 					alert("conflict");
@@ -237,6 +239,8 @@ $(document).ready(function(){
 			slotSelected = slotSelected.concat(map[value]);
 				// console.log("checked");
 		for( var i=0;i<slotSelected.length;i++){
+			// colour = colourArray[Math.floor((Math.random()*4))];
+			
 				console.log(slotSelected[i]);
 				test[slotSelected[i]](true);
 		}
@@ -252,7 +256,7 @@ $(document).ready(function(){
 		}
 		
 		}
-		
+
 		console.log(slotSelected);
 		// console.log(slotSelected);
 
