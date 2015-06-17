@@ -252,6 +252,7 @@ $(document).ready(function(){
 		}
 		
 		}
+		
 		console.log(slotSelected);
 		// console.log(slotSelected);
 
