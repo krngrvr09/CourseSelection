@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet/less" type="text/css" href="style.less">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="less.js"></script>
+<script src="javascript.js"></script>
+</head>
+<body>
+
+
+<div style="display:table;" id="outside">
+	<div style="display:table-row" id="timings">
+		<div class="time" id="dayheading">
+			<p>Days</p>
+		</div>
+		<div class="time" id="nine">
+			<p>9-9:30</p>
+		</div>
+		<div class="time" id="ninethirty">
+			<p>9:30-10:00</p>
+		</div>
+		<div class="time" id="ten">
+			<p>10:00-10:30</p>
+		</div>
+		<div class="time" id="tenthirty">
+			<p>10:30-11:00</p>
+		</div>
+		<div class="time" id="eleven">
+			<p>11:00-11:30</p>
+		</div>
+		<div class="time" id="eleventhirty">
+			<p>11:30-12:00</p>
+		</div>
+		<div class="time" id="twelve">
+			<p>12:00-12:30</p>
+		</div>
+		<div class="time" id="twelvethrity">
+			<p>12:30-1:00</p>
+		</div>
+		<div class="time" id="one">
+			<p>1:00-1:30</p>
+		</div>
+		<div class="time" id="onethirty">
+			<p>1:30-2:00</p>
+		</div>
+		<div class="time" id="two">
+			<p>2-2:30</p>
+		</div>
+		<div class="time" id="twothirty">
+			<p>2:30-3:00</p>
+		</div>
+		<div class="time" id="three">
+			<p>3:00-3:30</p>
+		</div>
+		<div class="time" id="threethirty">
+			<p>3:30-4:00</p>
+		</div>
+		<div class="time" id="four">
+			<p>4-4:30</p>
+		</div>
+		<div class="time" id="fourthirty">
+			<p>4:30-5:00</p>
+		</div>
+		<div class="time" id="five">
+			<p>5-5:30</p>
+		</div>
+
+	</div>
+	
+
+	<div style="display:table-row" id="monday_row">
+		<div class="days" id="monday">
+			<p>Monday</p>
+		</div>
+		<div class="slot" id="monday_first">
+		</div>
+		<div class="slot monday_first_slot" id="monday_second">
+		DCS</br>
+		PDCS</br>
+		Sweb</br>
+		LCS</br>
+		NS</br>
+		CMOS</br>
+		</div>
+		<div class="slot monday_first_slot" id="monday_third">
+		</div>
+		<div class="slot monday_first_slot" id="monday_fourth">
+		</div>
+		<div class="slot" id="monday_fifth">
+		</div>
+		<div class="slot monday_second_slot" id="monday_sixth">
+		CMP</br>
+		DMG</br>
+		ML</br>
+		CS</br>
+		FCS</br>
+		MCS</br>
+		</div>
+		<div class="slot monday_second_slot" id="monday_seventh">
+		</div>
+		<div class="slot monday_second_slot" id="monday_eighth">
+		</div>
+		<div class="slot" id="monday_ninth">
+		</div>
+		<div class="slot" id="monday_tenth">
+		</div>
+		<div class="slot monday_third_slot" id="monday_eleventh">
+		IA</br>
+		NLE</br>
+		ASP</br>
+		SSIoT</br>
+		AI</br>
+		</div>
+		<div class="slot monday_third_slot" id="monday_twelfth">
+		</div>
+		<div class="slot monday_third_slot" id="monday_thirteenth">
+		</div>
+		<div class="slot monday_fourth_slot" id="monday_fourteenth">
+		PoR</br>
+		Psy</br>
+		TandS</br>
+		NAP</br>
+		</div>
+		<div class="slot monday_fourth_slot" id="monday_fifteenth">
+		</div>
+		<div class="slot monday_fourth_slot" id="monday_sixteenth">
+		</div>
+		<div class="slot" id="monday_seventeenth">
+		</div>
+		
+	</div>
+	
+
+	<div style="display:table-row" id="tuesday_row">
+		<div class="days" id="tuesday">
+			<p>Tuesday</p>
+		</div>
+		<div class="slot" id="tuesday_first">
+		</div>
+		<div class="slot tuesday_first_slot" id="tuesday_second">
+			PSOSM</br>
+			MC</br>
+			DSP</br>
+			EO</br>
+			MAS</br>
+			IMB</br>
+		</div>
+		<div class="slot tuesday_first_slot" id="tuesday_third">
+		</div>
+		<div class="slot tuesday_first_slot" id="tuesday_fourth">
+		</div>
+		<div class="slot" id="tuesday_fifth">
+		</div>
+		<div class="slot tuesday_second_slot" id="tuesday_sixth">
+			PRP</br>
+			PA</br>
+			CG</br>
+			AN</br>
+			DVD</br>
+			FOMB</br>
+		</div>
+		<div class="slot tuesday_second_slot" id="tuesday_seventh">
+		</div>
+		<div class="slot tuesday_second_slot" id="tuesday_eighth">
+		</div>
+		<div class="slot" id="tuesday_ninth">
+		</div>
+		<div class="slot" id="tuesday_tenth">
+		</div>
+		<div class="slot tuesday_third_slot" id="tuesday_eleventh">
+			MAD</br>
+			AC</br>
+			RS</br>
+			MMBP</br>
+			GICT</br>
+		</div>
+		<div class="slot tuesday_third_slot" id="tuesday_twelfth">
+		</div>
+		<div class="slot tuesday_third_slot" id="tuesday_thirteenth">
+		</div>
+		<div class="slot tuesday_fourth_slot" id="tuesday_fourteenth">
+			Hist</br>
+			CT</br>
+			TA</br>
+			MMC</br>
+		</div>
+		<div class="slot tuesday_fourth_slot" id="tuesday_fifteenth">
+		</div>
+		<div class="slot tuesday_fourth_slot" id="tuesday_sixteenth">
+		</div>
+		<div class="slot" id="tuesday_seventeenth">
+		</div>
+
+	</div>
+	
+
+	<div style="display:table-row" id="wednesday_row">
+		<div class="days" id="wednesday">
+			<p>Wednesday</p>
+		</div>
+		<div class="slot" id="wednesday_first">
+		</div>
+		<div class="slot wednesday_first_slot" id="wednesday_second">
+			CNT</br>
+			GA</br>
+			SE</br>
+			LO</br>
+			CN</br>
+		</div>
+		<div class="slot wednesday_first_slot" id="wednesday_third">
+		</div>
+		<div class="slot wednesday_first_slot" id="wednesday_fourth">
+		</div>
+		<div class="slot" id="wednesday_fifth">
+		</div>
+		<div class="slot wednesday_second_slot" id="wednesday_sixth">
+			CMP</br>
+			DMG</br>
+			ML</br>
+			CS</br>
+			FCS</br>
+			MCS</br>
+		</div>
+		<div class="slot wednesday_second_slot" id="wednesday_seventh">
+		</div>
+		<div class="slot wednesday_second_slot" id="wednesday_eighth">
+		</div>
+		<div class="slot" id="wednesday_ninth">
+		</div>
+		<div class="slot" id="wednesday_tenth">
+		</div>
+		<div class="slot wednesday_third_slot" id="wednesday_eleventh">
+			Faculty meeting slot
+		</div>
+		<div class="slot wednesday_third_slot" id="wednesday_twelfth">
+		</div>
+		<div class="slot wednesday_third_slot" id="wednesday_thirteenth">
+		</div>
+		<div class="slot wednesday_fourth_slot" id="wednesday_fourteenth">
+			PoR</br>
+			Psy</br>
+			TandS</br>
+			NAP</br>
+		</div>
+		<div class="slot wednesday_fourth_slot" id="wednesday_fifteenth">
+		</div>
+		<div class="slot wednesday_fourth_slot" id="wednesday_sixteenth">
+		</div>
+		<div class="slot" id="wednesday_seventeenth">
+		</div>
+
+	</div>
+	
+
+	<div style="display:table-row" id="thursday_row">
+		<div class="days" id="thursday">
+			<p>Thursday</p>
+		</div>
+		<div class="slot" id="thursday_first">
+		</div>
+		<div class="slot thursday_first_slot" id="thursday_second">
+			ENT</br>
+			DCS</br>
+			PDCS</br>
+			Sweb</br>
+			LCS</br>
+			NS</br>
+			CMOS</br>
+		</div>
+		<div class="slot thursday_first_slot" id="thursday_third">
+		</div>
+		<div class="slot thursday_first_slot" id="thursday_fourth">
+		</div>
+		<div class="slot" id="thursday_fifth">
+		</div>
+		<div class="slot thursday_second_slot" id="thursday_sixth">
+			PRP</br>
+			PA</br>
+			CG</br>
+			AN</br>
+			DVD</br>
+			FOMB</br>
+		</div>
+		<div class="slot thursday_second_slot" id="thursday_seventh">
+		</div>
+		<div class="slot thursday_second_slot" id="thursday_eighth">
+		</div>
+		<div class="slot" id="thursday_ninth">
+		</div>
+		<div class="slot" id="thursday_tenth">
+		</div>
+		<div class="slot thursday_third_slot" id="thursday_eleventh">
+			IA</br>
+		NLE</br>
+		ASP</br>
+		SSIoT</br>
+		AI</br>
+		</div>
+		<div class="slot thursday_third_slot" id="thursday_twelfth">
+		</div>
+		<div class="slot thursday_third_slot" id="thursday_thirteenth">
+		</div>
+		<div class="slot thursday_fourth_slot" id="thursday_fourteenth">
+		seminar
+		</div>
+		<div class="slot thursday_fourth_slot" id="thursday_fifteenth">
+		</div>
+		<div class="slot thursday_fourth_slot" id="thursday_sixteenth">
+		</div>
+		<div class="slot" id="thursday_seventeenth">
+		</div>
+
+	</div>
+	
+
+	<div style="display:table-row" id="friday_row">
+		<div class="days" id="friday">
+			<p>Friday</p>
+		</div>
+		<div class="slot" id="friday_first">
+		</div>
+		<div class="slot friday_first_slot" id="friday_second">
+			PSOSM</br>
+			MC</br>
+			DSP</br>
+			EO</br>
+			MAS</br>
+			IMB</br>
+		</div>
+		<div class="slot friday_first_slot" id="friday_third">
+		</div>
+		<div class="slot friday_first_slot" id="friday_fourth">
+		</div>
+		<div class="slot" id="friday_fifth">
+		</div>
+		<div class="slot friday_second_slot" id="friday_sixth">
+		CNT</br>
+			GA</br>
+			SE</br>
+			LO</br>
+			CN</br>
+		</div>
+		<div class="slot friday_second_slot" id="friday_seventh">
+		</div>
+		<div class="slot friday_second_slot" id="friday_eighth">
+		</div>
+		<div class="slot" id="friday_ninth">
+		</div>
+		<div class="slot" id="friday_tenth">
+		</div>
+		<div class="slot friday_third_slot" id="friday_eleventh">
+			MAD</br>
+			AC</br>
+			RS</br>
+			MMBP</br>
+			GICT</br>
+		</div>
+		<div class="slot friday_third_slot" id="friday_twelfth">
+		</div>
+		<div class="slot friday_third_slot" id="friday_thirteenth">
+		</div>
+		<div class="slot friday_fourth_slot" id="friday_fourteenth">
+		Hist</br>
+			CT</br>
+			
+		</div>
+		<div class="slot friday_fourth_slot" id="friday_fifteenth">
+		</div>
+		<div class="slot friday_fourth_slot" id="friday_sixteenth">
+		</div>
+		<div class="slot" id="friday_seventeenth">
+		</div>
+
+	</div>
+		 
+	
+	<div id="rest">
+	</div>
+
+</div>
+
+<div id="checkboxes">
+  <input type="checkbox" name="vehicle" value="IMB" class="course"> Introduction To Mathematical biology<br>
+  <input type="checkbox" name="vehicle" value="MMBP" class="course"> MOlecular mechanics and biological physics<br>
+  <input type="checkbox" name="vehicle" value="FOMB" class="course"> Foundations of molecular biology<br>
+  <input type="checkbox" name="vehicle" value="SA" class="course"> System Administration<br>
+  <input type="checkbox" name="vehicle" value="SE" class="course"> Software engineering<br>
+  <input type="checkbox" name="vehicle" value="CMP" class="course"> Compilers<br>
+  <input type="checkbox" name="vehicle" value="CG" class="course"> Computer Graphics<br>
+  <input type="checkbox" name="vehicle" value="IA" class="course"> Image Analysis<br>
+  <input type="checkbox" name="vehicle" value="ML" class="course"> Machine Learning<br>
+  <input type="checkbox" name="vehicle" value="FCS" class="course"> Foundation of Computer Security<br>
+  <input type="checkbox" name="vehicle" value="MAD" class="course"> Modern Algorithm Design<br>
+  <input type="checkbox" name="vehicle" value="NS" class="course"> Network Security<br>
+  <input type="checkbox" name="vehicle" value="PA" class="course"> Program Analysis<br>
+  <input type="checkbox" name="vehicle" value="DMG" class="course"> Data Mining<br>
+  <input type="checkbox" name="vehicle" value="LCS" class="course"> Logic for Computer Science<br>
+  <input type="checkbox" name="vehicle" value="GA" class="course"> Graduate Algorithms<br>
+  <input type="checkbox" name="vehicle" value="MAS" class="course"> MultiAgent Systems<br>
+  <input type="checkbox" name="vehicle" value="MC" class="course"> Mobile cOmputing<br>
+  <input type="checkbox" name="vehicle" value="AC" class="course"> Applied Cryptography<br>
+  <input type="checkbox" name="vehicle" value="AN" class="course"> Advanced Networks<br>
+  <input type="checkbox" name="vehicle" value="SSIoT" class="course"> Smart Sensing for Internet of Things<br>
+  <input type="checkbox" name="vehicle" value="AI" class="course"> Artificial Intelligence<br>
+  <input type="checkbox" name="vehicle" value="PSOSM" class="course"> Privacy and Security in Online Social Media<br>
+  <input type="checkbox" name="vehicle" value="NAP" class="course"> Network Anonymity and Privacy<br>
+  <input type="checkbox" name="vehicle" value="NLE" class="course"> Non Linear Editing<br>
+  <input type="checkbox" name="vehicle" value="EO" class="course"> Engineering Optimization<br>
+  <input type="checkbox" name="vehicle" value="DVD" class="course"> Digital VLSI Design<br>
+  <input type="checkbox" name="vehicle" value="CMOS" class="course"> Analog CMOS Circuit Design<br>
+  <input type="checkbox" name="vehicle" value="DCS" class="course"> Digital COmmunication Systems<br>
+  <input type="checkbox" name="vehicle" value="DSP" class="course"> Digital Signal Processing<br>
+  <input type="checkbox" name="vehicle" value="ASP" class="course"> Advanced Signal Processing<br>
+  <input type="checkbox" name="vehicle" value="CS" class="course"> Compressive Sensing<br>
+  <input type="checkbox" name="vehicle" value="CN" class="course"> Communication Networks<br>
+  <input type="checkbox" name="vehicle" value="PRP" class="course"> Probability and Random Processes<br>
+  <input type="checkbox" name="vehicle" value="GICT" class="course"> Green Information and COmmunication Technology<br>
+  <input type="checkbox" name="vehicle" value="MMC" class="course"> Multimedia Compression<br>
+  <input type="checkbox" name="vehicle" value="CT" class="course"> Control Theory<br>
+  <input type="checkbox" name="vehicle" value="PDCS" class="course"> Principles of Digital COmmunication SYstems<br>
+  <input type="checkbox" name="vehicle" value="RS" class="course"> Radar Systems<br>
+  <input type="checkbox" name="vehicle" value="ENT" class="course"> Entrepreneurship<br>
+  <input type="checkbox" name="vehicle" value="TnS" class="course"> technology and SOciety<br>
+  <input type="checkbox" name="vehicle" value="Psy" class="course"> Introduction To Psychology<br>
+  <input type="checkbox" name="vehicle" value="His" class="course"> History in Indian national movement<br>
+  <input type="checkbox" name="vehicle" value="TA" class="course"> Theatre APpreceiation<br>
+  <input type="checkbox" name="vehicle" value="CT" class="course"> Critical THinking<br>
+  <input type="checkbox" name="vehicle" value="PoR" class="course"> Philosophy of religion<br>
+  <input type="checkbox" name="vehicle" value="MCS" class="course"> Modelling COmplez Systems<br>
+  <input type="checkbox" name="vehicle" value="LO" class="course"> Linear Optmization<br>
+  <input type="checkbox" name="vehicle" value="Phy" class="course"> Physics 1<br>
+  
+</div>
+</body>
+</html>
