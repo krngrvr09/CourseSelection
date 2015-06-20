@@ -94,136 +94,61 @@ $(document).ready(function(){
 				},
 		"m3" : function(decorate){
 					colourIt("monday_third_slot",decorate,true);
-					// alert("lol");
-					// $(".monday_third_slot")[0].style.backgroundColor=colour;
-					// $(".monday_third_slot")[1].style.backgroundColor=colour;
-					// $(".monday_third_slot")[2].style.backgroundColor=colour;
 				},
 		"m4" : function(decorate){
 					colourIt("monday_fourth_slot",decorate, false);
-					// alert("lol");
-					// $(".monday_fourth_slot")[0].style.backgroundColor=colour;
-					// $(".monday_fourth_slot")[1].style.backgroundColor=colour;
-					// $(".monday_fourth_slot")[2].style.backgroundColor=colour;
 				},
 		"t1" : function(decorate){
 					colourIt("tuesday_first_slot",decorate, false);
-					// alert("lol");
-					// $(".tuesday_first_slot")[0].style.backgroundColor=colour;
-					// $(".tuesday_first_slot")[1].style.backgroundColor=colour;
-					// $(".tuesday_first_slot")[2].style.backgroundColor=colour;
 				},
 		"t2" : function(decorate){
 					colourIt("tuesday_second_slot",decorate,true);
-					// alert("lol");
-					// $(".tuesday_second_slot")[0].style.backgroundColor=colour;
-					// $(".tuesday_second_slot")[1].style.backgroundColor=colour;
-					// $(".tuesday_second_slot")[2].style.backgroundColor=colour;
 				},
 		"t3" : function(decorate){
 					colourIt("tuesday_third_slot",decorate,false);
-					// alert("lol");
-					// $(".tuesday_third_slot")[0].style.backgroundColor=colour;
-					// $(".tuesday_third_slot")[1].style.backgroundColor=colour;
-					// $(".tuesday_third_slot")[2].style.backgroundColor=colour;
 				},
 		"t4" : function(decorate){
 					colourIt("tuesday_fourth_slot",decorate,true);
-					// alert("lol");
-					// $(".tuesday_fourth_slot")[0].style.backgroundColor=colour;
-					// $(".tuesday_fourth_slot")[1].style.backgroundColor=colour;
-					// $(".tuesday_fourth_slot")[2].style.backgroundColor=colour;
 				},
 		"w1" : function(decorate){
 					colourIt("wednesday_first_slot",decorate,true);
-					// alert("lol");
-					// $(".wednesday_first_slot")[0].style.backgroundColor=colour;
-					// $(".wednesday_first_slot")[1].style.backgroundColor=colour;
-					// $(".wednesday_first_slot")[2].style.backgroundColor=colour;
 				},
 		"w2" : function(decorate){
 					colourIt("wednesday_second_slot",decorate,false);
-					// alert("lol");
-					// $(".wednesday_second_slot")[0].style.backgroundColor=colour;
-					// $(".wednesday_second_slot")[1].style.backgroundColor=colour;
-					// $(".wednesday_second_slot")[2].style.backgroundColor=colour;
 				},
 		"w3" : function(decorate){
 					colourIt("wednesday_third_slot",decorate,true);
-					// alert("lol");
-					// $(".wednesday_third_slot")[0].style.backgroundColor=colour;
-					// $(".wednesday_third_slot")[1].style.backgroundColor=colour;
-					// $(".wednesday_third_slot")[2].style.backgroundColor=colour;
 				},
 		"w4" : function(decorate){
 					colourIt("wednesday_fourth_slot",decorate,false);
-					// alert("lol");
-					// $(".wednesday_fourth_slot")[0].style.backgroundColor=colour;
-					// $(".wednesday_fourth_slot")[1].style.backgroundColor=colour;
-					// $(".wednesday_fourth_slot")[2].style.backgroundColor=colour;
 				},
 		"th1" : function(decorate){
 					colourIt("thursday_first_slot",decorate,false);
-					// alert("lol");
-					// $(".thursday_first_slot")[0].style.backgroundColor=colour;
-					// $(".thursday_first_slot")[1].style.backgroundColor=colour;
-					// $(".thursday_first_slot")[2].style.backgroundColor=colour;
 				},
 		"th2" : function(decorate){
 					colourIt("thursday_second_slot",decorate,true);
-					// alert("lol");
-					// $(".thursday_second_slot")[0].style.backgroundColor=colour;
-					// $(".thursday_second_slot")[1].style.backgroundColor=colour;
-					// $(".thursday_second_slot")[2].style.backgroundColor=colour;
 				},
 		"th3" : function(decorate){
 					colourIt("thursday_third_slot",decorate,false);
-					// alert("lol");
-					// $(".thursday_third_slot")[0].style.backgroundColor=colour;
-					// $(".thursday_third_slot")[1].style.backgroundColor=colour;
-					// $(".thursday_third_slot")[2].style.backgroundColor=colour;
 				},
 		"th4" : function(decorate){
 					colourIt("thursday_fourth_slot",decorate,true);
-					// alert("lol");
-					// $(".thursday_fourth_slot")[0].style.backgroundColor=colour;
-					// $(".thursday_fourth_slot")[1].style.backgroundColor=colour;
-					// $(".thursday_fourth_slot")[2].style.backgroundColor=colour;
 				},
 		"f1" : function(decorate){
 					colourIt("friday_first_slot",decorate,true);
-					// alert("lol");
-					// $(".friday_first_slot")[0].style.backgroundColor=colour;
-					// $(".friday_first_slot")[1].style.backgroundColor=colour;
-					// $(".friday_first_slot")[2].style.backgroundColor=colour;
 				},
 		"f2" : function(decorate){
 					colourIt("friday_second_slot",decorate,false);
-					// alert("lol");
-					// $(".friday_second_slot")[0].style.backgroundColor=colour;
-					// $(".friday_second_slot")[1].style.backgroundColor=colour;
-					// $(".friday_second_slot")[2].style.backgroundColor=colour;
 				},
 		"f3" : function(decorate){
 					colourIt("friday_third_slot",decorate,true);
-					// alert("lol");
-					// $(".friday_third_slot")[0].style.backgroundColor=colour;
-					// $(".friday_third_slot")[1].style.backgroundColor=colour;
-					// $(".friday_third_slot")[2].style.backgroundColor=colour;
 				},
 		"f4" : function(decorate){
 					colourIt("friday_fourth_slot",decorate,false);
-					// alert("lol");
-					// $(".friday_fourth_slot")[0].style.backgroundColor=colour;
-					// $(".friday_fourth_slot")[1].style.backgroundColor=colour;
-					// $(".friday_fourth_slot")[2].style.backgroundColor=colour;
 				},
 				
 				
 	}
-
-	
-	// test["m1"]();
 
 	$(".course").click(function(){
 		
@@ -263,49 +188,4 @@ $(document).ready(function(){
 		
 
 	});
-	// window.setInterval(function(){
-	// $('#checkboxes input:checked').each(function() {
-
-	// 	value = $(this).attr("value");
-	// 	// if(map[value] in slotSelected){
-
-	// 	// }
-	// 	slotSelected =  slotSelected.concat(map[value]);
-	// 	alert(slotSelected);
-		
-	// 	// switch(value){
-	// 	// 	case "IMB":
-	// 	// 		slotSelected.concat(map[value]);
-	// 	// 		break;
-	// 	// 	case "MMBP":
-	// 	// 		slotSelected.push("t3");
-	// 	// 		slotSelected.push("f3");
-				
-	// 	// 		break;
-	// 	// 	case "FOMB":
-	// 	// 		slotSelected.push("t2");
-	// 	// 		slotSelected.push("th2");
-				
-	// 	// 		break;
-	// 	// 	case "SA":
-	// 	// 		break;
-	// 	// 	case "SE":
-	// 	// 		slotSelected.push("w1");
-	// 	// 		slotSelected.push("f2");
-				
-	// 	// 		break;
-	// 	// 	case "CMP":
-	// 	// 		slotSelected.push("m2");
-	// 	// 		slotSelected.push("w2");
-				
-	// 	// 		break;
-			
-	// 	// }
-	// 	// for(var i in slotSelected){
-	// 	// 	tes[i]();
-	// 	// }
-	// });
-	// }, 1000);
-	
-	// alert($("#checkboxes input:checked").length);
 });
