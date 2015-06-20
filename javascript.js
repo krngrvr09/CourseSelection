@@ -185,13 +185,15 @@ $(document).ready(function(){
 
 		if($(this).is(":checked")){
 			// alert();
-			console.log("lololo: "+value);
 			for(var i=0;i<courseToSlot[value].length;i++){
 				// if($.inArray(courseToSlot[value][i],slotSelected) > -1){
 				// 	alert("conflict");
 				// }
-				if(slotSelected.indexOf(courseToSlot[value][i])>0){
-					console.log(slotSelected.indexOf(courseToSlot[value][i]));
+				// console.log("slotSelected: "+slotToCourse+" coursetoslot[value][i]: "+courseToSlot[value][i]);
+				// console.log("index: "+slotSelected.indexOf(courseToSlot[value][i]));
+				console.log("1 "+courseToSlot[value][i]);
+				if(slotSelected.indexOf(courseToSlot[value][i])>-1){
+					// console.log(slotSelected.indexOf(courseToSlot[value][i]));
 					alert("conflict with "+$(slotToCourse[courseToSlot[value][i]]).filter(courseSelected)[0]);
 					$(this).attr("checked",false);
 					return;
