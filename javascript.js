@@ -90,7 +90,7 @@ $(document).ready(function(){
 		"t4":["Hist","CT","TA","MMC"],
 		"w1":["CNT","GA","SE","LO","CN"],
 		"w2":["CMP","DMG","ML","CS","FCS","MCS"],
-		"w3":[],
+		"w3":["Phy"],
 		"w4":["PoR","Psy","TandS","NAP","SCM","TA"],
 		"th1":["ENT","DCS","PDCS","SWeb","LCS","NS","CMOS"],
 		"th2":["PRP","PA","CG","AN","DVD","FOMB"],
