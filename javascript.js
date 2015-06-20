@@ -75,10 +75,13 @@ $(document).ready(function(){
 		"LO":["w1","f2"],
 		"Phy":["w3","w4"]
 	}
+
+
 	var colour="#009933";
 	var colourArray=["#009933","#ff6600","#cc00cc","#0066ff","#9933ff"]
 	var light_grey = "#b2b2b2"
 	var dark_grey = "#4c4c4c"
+	courseSelected=[];
 	
 	var test={
 		"m1" : function(decorate){
@@ -153,32 +156,57 @@ $(document).ready(function(){
 	$(".course").click(function(){
 		
 		var value = $(this).attr("value");
-		
+
 		if($(this).is(":checked")){
 			// alert();
 			for(var i=0;i<map[value].length;i++){
-				if($.inArray(map[value][i],slotSelected) > -1){
-					alert("conflict");
+				// if($.inArray(map[value][i],slotSelected) > -1){
+				// 	alert("conflict");
+				// }
+				if(slotSelected.indexOf(map[value][i])>0){
+					alert("conflict with "+map[value][i]);
+					$(this).attr("checked",false);
+					return;
 				}
+				// for( i in map){
+				// 	if(map[i].indexOf(map[value][i])>-1){
+				// 		alert(i);
+				// 	}
+				// }
+		
 			}
+			courseSelected.push(value);
+			// alert(courseSelected);
 			slotSelected = slotSelected.concat(map[value]);
 				// console.log("checked");
-		for( var i=0;i<slotSelected.length;i++){
+			for( var i=0;i<slotSelected.length;i++){
 			// colour = colourArray[Math.floor((Math.random()*4))];
 			
 				console.log(slotSelected[i]);
 				test[slotSelected[i]](true);
-		}
+			}
+		console.log("slot selected1: "+slotSelected);
 		}
 		else{
+			// alert(courseSelected.indexOf(value));
 			// console.log(" not checked");
 			slotSelected = slotSelected.filter( function( el ) {
   				return map[value].indexOf( el ) < 0;
 			} );
-		for( var i=0;i<map[value].length;i++){
-				console.log(slotSelected[i]);
-				test[map[value][i]](false);
-		}
+			console.log("slot selected: "+slotSelected);
+			if(courseSelected.indexOf(value)>-1){
+				courseSelected.splice(courseSelected.indexOf(value),1);
+				// alert(courseSelected);
+				
+			}
+			
+			for( var i=0;i<map[value].length;i++){
+					
+				if(slotSelected.indexOf(map[value][i])>-1){
+					test[map[value][i]](false);
+				}
+			}
+		console.log(slotSelected[i]+" "+map[value][i]);
 		
 		}
 
