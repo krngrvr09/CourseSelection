@@ -90,7 +90,7 @@ $(document).ready(function(){
 		"w1":["CNT","GA","SE","LO","CN"],
 		"w2":["CMP","DMG","ML","CS","FCS","MCS"],
 		"w3":[],
-		"w4":["PoR","Psy","TandS","NAP","SCM"],
+		"w4":["PoR","Psy","TandS","NAP","SCM","TA"],
 		"th1":["ENT","DCS","PDCS","SWeb","LCS","NS","CMOS"],
 		"th2":["PRP","PA","CG","AN","DVD","FOMB"],
 		"th3":["IA","NLE","ASP","SSIoT","AI","SC"],
@@ -184,11 +184,13 @@ $(document).ready(function(){
 
 		if($(this).is(":checked")){
 			// alert();
+			console.log("lololo: "+value);
 			for(var i=0;i<courseToSlot[value].length;i++){
 				// if($.inArray(courseToSlot[value][i],slotSelected) > -1){
 				// 	alert("conflict");
 				// }
 				if(slotSelected.indexOf(courseToSlot[value][i])>0){
+					console.log(slotSelected.indexOf(courseToSlot[value][i]));
 					alert("conflict with "+$(slotToCourse[courseToSlot[value][i]]).filter(courseSelected)[0]);
 					$(this).attr("checked",false);
 					return;
