@@ -91,7 +91,7 @@ $(document).ready(function(){
 		"w1":["CNT","GA","SE","LO","CN"],
 		"w2":["CMP","DMG","ML","CS","FCS","MCS"],
 		"w3":["Phy"],
-		"w4":["PoR","Psy","TandS","NAP","SCM","TA"],
+		"w4":["PoR","Psy","TandS","NAP","SCM","TA","Phy"],
 		"th1":["ENT","DCS","PDCS","SWeb","LCS","NS","CMOS"],
 		"th2":["PRP","PA","CG","AN","DVD","FOMB"],
 		"th3":["IA","NLE","ASP","SSIoT","AI","SC"],
