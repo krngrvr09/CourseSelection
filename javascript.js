@@ -73,14 +73,16 @@ $(document).ready(function(){
 		"PoR":["m4","w4"],
 		"MCS":["m2","w2"],
 		"LO":["w1","f2"],
-		"Phy":["w3","w4"]
+		"Phy":["w3","w4"],
+		"SC":["th3","th4"],
+		"SCM":["m4","w4"]
 	}
 
 	var slotToCourse = {
 		"m1":["DCS","PDCS","SWeb","LCS","NS","CMOS"],
 		"m2":["CMP","DMG","ML","CS","FCS","MCS"],
 		"m3":["IA","NLE","ASP","SSIoT","AI"],
-		"m4":["PoR","Psy","TandS","NAP"],
+		"m4":["PoR","Psy","TandS","NAP","SCM"],
 		"t1":["PSOSM","MC","DSP","EO","MAS","IMB"],
 		"t2":["PRP","PA","CG","AN","DVD","FOMB"],
 		"t3":["MAD","AC","RS","MMBP","GICT"],
@@ -88,11 +90,11 @@ $(document).ready(function(){
 		"w1":["CNT","GA","SE","LO","CN"],
 		"w2":["CMP","DMG","ML","CS","FCS","MCS"],
 		"w3":[],
-		"w4":["PoR","Psy","TandS","NAP"],
+		"w4":["PoR","Psy","TandS","NAP","SCM"],
 		"th1":["ENT","DCS","PDCS","SWeb","LCS","NS","CMOS"],
 		"th2":["PRP","PA","CG","AN","DVD","FOMB"],
-		"th3":["IA","NLE","ASP","SSIoT","AI"],
-		"th4":[],
+		"th3":["IA","NLE","ASP","SSIoT","AI","SC"],
+		"th4":["SC"],
 		"f1":["PSOSM","MC","DSP","EO","MAS","IMB"],
 		"f2":["CNT","GA","SE","LO","CN"],
 		"f3":["MAD","AC","RS","MMBP","GICT"],
