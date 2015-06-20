@@ -1,14 +1,14 @@
 
 $(document).ready(function(){
 	
-	function colourIt(text,decorate,paint){
+	function colourIt(text,decorate,l_grey){
 		if(decorate){
 
 			$("."+text)[0].style.backgroundColor=colour;
 			$("."+text)[1].style.backgroundColor=colour;
 			$("."+text)[2].style.backgroundColor=colour;
 			}
-			else if(paint){
+			else if(l_grey){
 			$("."+text)[0].style.backgroundColor=light_grey;
 			$("."+text)[1].style.backgroundColor=light_grey;
 			$("."+text)[2].style.backgroundColor=light_grey;
@@ -186,11 +186,7 @@ $(document).ready(function(){
 		if($(this).is(":checked")){
 			// alert();
 			for(var i=0;i<courseToSlot[value].length;i++){
-				// if($.inArray(courseToSlot[value][i],slotSelected) > -1){
-				// 	alert("conflict");
-				// }
-				// console.log("slotSelected: "+slotToCourse+" coursetoslot[value][i]: "+courseToSlot[value][i]);
-				// console.log("index: "+slotSelected.indexOf(courseToSlot[value][i]));
+				
 				console.log("1 "+courseToSlot[value][i]);
 				if(slotSelected.indexOf(courseToSlot[value][i])>-1){
 					// console.log(slotSelected.indexOf(courseToSlot[value][i]));
@@ -198,19 +194,11 @@ $(document).ready(function(){
 					$(this).attr("checked",false);
 					return;
 				}
-				// for( i in courseToSlot){
-				// 	if(courseToSlot[i].indexOf(courseToSlot[value][i])>-1){
-				// 		alert(i);
-				// 	}
-				// }
-		
+				
 			}
 			courseSelected.push(value);
-			// alert(courseSelected);
 			slotSelected = slotSelected.concat(courseToSlot[value]);
-				// console.log("checked");
 			for( var i=0;i<slotSelected.length;i++){
-			// colour = colourArray[Math.floor((Math.random()*4))];
 			
 				console.log(slotSelected[i]);
 				test[slotSelected[i]](true);
@@ -218,31 +206,26 @@ $(document).ready(function(){
 			console.log("course selected: "+courseSelected);
 		}
 		else{
-			// alert(courseSelected.indexOf(value));
-			// console.log(" not checked");
+			
 			slotSelected = slotSelected.filter( function( el ) {
   				return courseToSlot[value].indexOf( el ) < 0;
 			} );
+			
 			console.log("slot selected: "+slotSelected);
 			if(courseSelected.indexOf(value)>-1){
 				courseSelected.splice(courseSelected.indexOf(value),1);
-				// alert(courseSelected);
 				
 			}
 			
 			for( var i=0;i<courseToSlot[value].length;i++){
 					
-				// if(slotSelected.indexOf(courseToSlot[value][i])>-1){
 					test[courseToSlot[value][i]](false);
-				// }
 			}
 		console.log(slotSelected[i]+" "+courseToSlot[value][i]);
 		
 		}
 
 		console.log(slotSelected);
-		// console.log(slotSelected);
-
 		
 
 	});
