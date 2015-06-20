@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	var slotSelected = [];
 	var value="";
-	var map={
+	var courseToSlot={
 		"IMB": ["t1","f1"],
 		"MMBP":["t3","f3"],
 		"FOMB":["t2","th2"],
@@ -74,6 +74,29 @@ $(document).ready(function(){
 		"MCS":["m2","w2"],
 		"LO":["w1","f2"],
 		"Phy":["w3","w4"]
+	}
+
+	var slotToCourse = {
+		"m1":["DCS","PDCS","SWeb","LCS","NS","CMOS"],
+		"m2":["CMP","DMG","ML","CS","FCS","MCS"],
+		"m3":["IA","NLE","ASP","SSIoT","AI"],
+		"m4":["PoR","Psy","TandS","NAP"],
+		"t1":["PSOSM","MC","DSP","EO","MAS","IMB"],
+		"t2":["PRP","PA","CG","AN","DVD","FOMB"],
+		"t3":["MAD","AC","RS","MMBP","GICT"],
+		"t4":["Hist","CT","TA","MMC"],
+		"w1":["CNT","GA","SE","LO","CN"],
+		"w2":["CMP","DMG","ML","CS","FCS","MCS"],
+		"w3":[],
+		"w4":["PoR","Psy","TandS","NAP"],
+		"th1":["ENT","DCS","PDCS","SWeb","LCS","NS","CMOS"],
+		"th2":["PRP","PA","CG","AN","DVD","FOMB"],
+		"th3":["IA","NLE","ASP","SSIoT","AI"],
+		"th4":[],
+		"f1":["PSOSM","MC","DSP","EO","MAS","IMB"],
+		"f2":["CNT","GA","SE","LO","CN"],
+		"f3":["MAD","AC","RS","MMBP","GICT"],
+		"f4":["Hist","CT"]
 	}
 
 
@@ -159,17 +182,17 @@ $(document).ready(function(){
 
 		if($(this).is(":checked")){
 			// alert();
-			for(var i=0;i<map[value].length;i++){
-				// if($.inArray(map[value][i],slotSelected) > -1){
+			for(var i=0;i<courseToSlot[value].length;i++){
+				// if($.inArray(courseToSlot[value][i],slotSelected) > -1){
 				// 	alert("conflict");
 				// }
-				if(slotSelected.indexOf(map[value][i])>0){
-					alert("conflict with "+map[value][i]);
+				if(slotSelected.indexOf(courseToSlot[value][i])>0){
+					alert("conflict with "+$(slotToCourse[courseToSlot[value][i]]).filter(courseSelected)[0]);
 					$(this).attr("checked",false);
 					return;
 				}
-				// for( i in map){
-				// 	if(map[i].indexOf(map[value][i])>-1){
+				// for( i in courseToSlot){
+				// 	if(courseToSlot[i].indexOf(courseToSlot[value][i])>-1){
 				// 		alert(i);
 				// 	}
 				// }
@@ -177,7 +200,7 @@ $(document).ready(function(){
 			}
 			courseSelected.push(value);
 			// alert(courseSelected);
-			slotSelected = slotSelected.concat(map[value]);
+			slotSelected = slotSelected.concat(courseToSlot[value]);
 				// console.log("checked");
 			for( var i=0;i<slotSelected.length;i++){
 			// colour = colourArray[Math.floor((Math.random()*4))];
@@ -185,13 +208,13 @@ $(document).ready(function(){
 				console.log(slotSelected[i]);
 				test[slotSelected[i]](true);
 			}
-		console.log("slot selected1: "+slotSelected);
+			console.log("course selected: "+courseSelected);
 		}
 		else{
 			// alert(courseSelected.indexOf(value));
 			// console.log(" not checked");
 			slotSelected = slotSelected.filter( function( el ) {
-  				return map[value].indexOf( el ) < 0;
+  				return courseToSlot[value].indexOf( el ) < 0;
 			} );
 			console.log("slot selected: "+slotSelected);
 			if(courseSelected.indexOf(value)>-1){
@@ -200,13 +223,13 @@ $(document).ready(function(){
 				
 			}
 			
-			for( var i=0;i<map[value].length;i++){
+			for( var i=0;i<courseToSlot[value].length;i++){
 					
-				if(slotSelected.indexOf(map[value][i])>-1){
-					test[map[value][i]](false);
-				}
+				// if(slotSelected.indexOf(courseToSlot[value][i])>-1){
+					test[courseToSlot[value][i]](false);
+				// }
 			}
-		console.log(slotSelected[i]+" "+map[value][i]);
+		console.log(slotSelected[i]+" "+courseToSlot[value][i]);
 		
 		}
 
