@@ -75,7 +75,8 @@ $(document).ready(function(){
 		"LO":["w1","f2"],
 		"Phy":["w3","w4"],
 		"SC":["th3","th4"],
-		"SCM":["m4","w4"]
+		"SCM":["m4","w4"],
+		"CNT":["w1","f2"]
 	}
 
 	var slotToCourse = {
