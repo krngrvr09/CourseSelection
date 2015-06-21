@@ -12,7 +12,7 @@ $(document).ready(function(){
 	**/
 	function colourIt(text,decorate,l_grey){
 		if(decorate){
-			colour=	colourArray[Math.floor(Math.random()*4)]
+			// colour=	colourArray[Math.floor(Math.random()*4)]
 			$("."+text)[0].style.backgroundColor=colour;
 			$("."+text)[1].style.backgroundColor=colour;
 			$("."+text)[2].style.backgroundColor=colour;
