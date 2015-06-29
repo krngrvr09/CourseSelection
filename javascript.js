@@ -1,6 +1,9 @@
 
 $(document).ready(function(){
 
+
+    $('[data-toggle="tooltip"]').tooltip(); 
+
 	/**
 	* Colours the appropriate slot with the appropriate colour 
 	* using the parameters passed.
@@ -10,6 +13,7 @@ $(document).ready(function(){
 	* #l_grey: if not coloured then should the colour be light grey
 	*          or dark grey.
 	**/
+
 	function colourIt(text,decorate,l_grey){
 		if(decorate){
 			// colour=	colourArray[Math.floor(Math.random()*4)]
