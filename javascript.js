@@ -43,9 +43,9 @@ $(document).ready(function(){
 		"MMBP":["t3","f3"],
 		"FOMB":["t2","th2"],
 		"SA":[],
-		"SE":["w1","f2"],
+		"SE":["w1","f2","th3"],
 		"CMP":["m2","w2"],
-		"CG":["t2","th2"],
+		"CG":["t2","th2","t4"],
 		"IA":["m3","th3"],
 		"ML":["m2","w2"],
 		"FCS":["m2","w2"],
@@ -63,14 +63,14 @@ $(document).ready(function(){
 		"SWeb":["m1","th1"],
 		"AI":["m3","th3"],
 		"PSOSM":["t1","f1"],
-		"NAP":["m4","w4"],
+		"NAP":["t4","f4"],
 		"NLE":["m3","th3"],
 		"EO":["t1","f1"],
 		"DVD":["t2","th2"],
 		"CMOS":["m1","th1"],
-		"DCS":["m1","th1"],
-		"DSP":["t1","f1"],
-		"ASP":["m3","th3"],
+		"DCS":["m2","w2"],
+		"DSP":["t1","f1","w3"],
+		"ASP":["m3","th3","w3"],
 		"CS":["m2","w2"],
 		"CN":["w1","f2"],
 		"PRP":["t2","th2"],
@@ -91,31 +91,37 @@ $(document).ready(function(){
 		"Phy":["w3","w4"],
 		"SC":["th3","th4"],
 		"SCM":["m4","w4"],
-		"CNT":["w1","f2"]
+		"CNT":["w1","f2"],
+		"ISC":["t3","f3"],
+		"APRML":["m4"],
+		"OOPD":["m4","f4"],
+		
+		
+		
 	}
 
 	// Hashmap with time slot as key and courses in that slot as value
 	var slotToCourse = {
-		"m1":["DCS","PDCS","SWeb","LCS","NS","CMOS"],
-		"m2":["CMP","DMG","ML","CS","FCS","MCS"],
+		"m1":["PDCS","SWeb","LCS","NS","CMOS"],
+		"m2":["DCS","CMP","DMG","ML","CS","FCS","MCS"],
 		"m3":["IA","NLE","ASP","SSIoT","AI"],
-		"m4":["PoR","Psy","TandS","NAP","SCM"],
+		"m4":["PoR","Psy","TandS","SCM","APRML","OOPD"],
 		"t1":["PSOSM","MC","DSP","EO","MAS","IMB"],
 		"t2":["PRP","PA","CG","AN","DVD","FOMB"],
-		"t3":["MAD","AC","RS","MMBP","GICT"],
-		"t4":["Hist","CT","TA","MMC"],
+		"t3":["MAD","AC","RS","MMBP","GICT","ISC"],
+		"t4":["Hist","CT","TA","MMC","NAP","CG"],
 		"w1":["CNT","GA","SE","LO","CN"],
-		"w2":["CMP","DMG","ML","CS","FCS","MCS"],
-		"w3":["Phy"],
-		"w4":["PoR","Psy","TandS","NAP","SCM","TA","Phy"],
-		"th1":["ENT","DCS","PDCS","SWeb","LCS","NS","CMOS"],
+		"w2":["DCS","CMP","DMG","ML","CS","FCS","MCS"],
+		"w3":["Phy","ASP","DSP"],
+		"w4":["PoR","Psy","TandS","SCM","TA","Phy"],
+		"th1":["ENT","PDCS","SWeb","LCS","NS","CMOS"],
 		"th2":["PRP","PA","CG","AN","DVD","FOMB"],
-		"th3":["IA","NLE","ASP","SSIoT","AI","SC"],
+		"th3":["IA","NLE","ASP","SSIoT","AI","SC","SE"],
 		"th4":["SC"],
 		"f1":["PSOSM","MC","DSP","EO","MAS","IMB"],
 		"f2":["CNT","GA","SE","LO","CN"],
-		"f3":["MAD","AC","RS","MMBP","GICT"],
-		"f4":["Hist","CT"]
+		"f3":["MAD","AC","RS","MMBP","GICT","ISC"],
+		"f4":["Hist","CT","NAP","OOPD"]
 	}
 
 
